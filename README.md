@@ -1,4 +1,4 @@
-# network_flow
+# network_flow(mac)
 
 取得中正大學宿網流量，當流量超過10GB時警告
 
