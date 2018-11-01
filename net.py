@@ -48,8 +48,4 @@ try:
     warning_flow = int(input())
     getflow(30)
 except:
-<<<<<<< HEAD
     print("請輸入有效數字")
-=======
-    print("請輸入有效數字")
->>>>>>> 87c9ee5333546375eebc1dbadd59a0f8b3cad697
