@@ -4,7 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-from datetime import datetime
 import time
 
 from pygame import mixer
@@ -18,8 +17,8 @@ def getflow(n):
         s.connect(("8.8.8.8", 80))
         localip = s.getsockname()[0]
 
-        # url = 'http://netflow.dorm.ccu.edu.tw/flows/' + str(localip)
-        url = 'http://netflow.dorm.ccu.edu.tw/flows/'+ '140.123.222.100'
+        url = 'http://netflow.dorm.ccu.edu.tw/flows/' + str(localip)
+        # url = 'http://netflow.dorm.ccu.edu.tw/flows/'+ '140.123.222.100'
 
         res = requests.get(url)
         soup = BeautifulSoup(res.content, 'html.parser')
